@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+<div id="loader">
+  <div class="sk-chase">
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+</div>
+</div>
+
+    <div class="side-menu">
+      <div
+        class="side-bar p-4 text-white d-flex flex-column justify-content-between"
+      >
+        <ul class="list-unstyled overflow-hidden pt-2" id="menu">
+          <li class="mb-3 position-relative" id="searchAnc">Search</li>
+          <li class="mb-3 position-relative" id="categoriesAnc">Categories</li>
+          <li class="mb-3 position-relative" id="areaAnc">Area</li>
+          <li class="mb-3 position-relative" id="ingredientsAnc">Ingredients</li>
+          <li class="mb-3 position-relative" id="contactAnc">Contact Us</li>
+        </ul>
+        <div class="bar-icons">
+          <div class="social mb-3">
+            <i class="fa-brands fa-facebook-f me-2"></i>
+            <i class="fa-brands fa-twitter me-2"></i>
+            <i class="fa fa-globe"></i>
+          </div>
+          <p class="mb-3">
+            Copyright Â© 2019 All Rights <br />
+            Reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="side-logo bg-white py-4 px-2 d-flex flex-column justify-content-between text-center text-black"
+      >
+        <img src="./images/logo.png" class="logo" alt="" />
+        <i
+          class="fa-solid open-close-icon fa-2x fa-align-justify"
+          id="openBtn"
+        ></i>
+        <div class="icons">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Start Of HEADER -->
+    <header class="py-5 min-vh-100" id="main">
+      <div class="container">
+        <div class="row g-4 meals"></div>
+      </div>
+    </header>
+    <!-- End Of HEADER -->
+    <!-- Start Of Details SECTION  -->
+    <section class="py-5 min-vh-100" id="details">
+      <div class="container">
+        <div class="row text-white" id="showDetails">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Details SECTION  -->
+    <!-- Start Of Search *SECTION  -->
+    <section class="py-5 min-vh-100" id="search">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search By Name"
+                id="searchByName"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search By Frist Letter"
+                id="searchByLetter"
+              />
+            </div>
+          </div>
+          <div class="row g-3 meals"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Search *SECTION  -->
+
+    <!-- Start Of Categories SECTION  -->
+    <section class="py-5 min-vh-100" id="categories">
+      <div class="container">
+        <div class="row g-4" id="showCategories"></div>
+        <div class="row g-4 meals" ></div>
+      </div>
+    </section>
+    <!-- End Of Categories SECTION  -->
+
+    <!-- Start Of Area SECTION  -->
+    <section class="py-5 min-vh-100" id="area">
+      <div class="container">
+        <div class="row g-4" id="showArea"></div>
+        <div class="row g-4 meals" ></div>
+      </div>
+    </section>
+    <!-- End Of Area SECTION  -->
+
+    <!-- Start Of Ingredients SECTION  -->
+    <section class="py-5 min-vh-100" id="ingredients">
+      <div class="container">
+        <div class="row g-4" id="showIngred"></div>
+        <div class="row g-4 meals" ></div>
+      </div>
+    </section>
+    <!-- End Of Ingredients SECTION  -->
+
+    <!-- Start Of Contact SECTION  -->
+    <section class="py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div
+            class="contact min-vh-100 d-flex justify-content-center align-items-center"
+          >
+            <div class="container w-75">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control mb-2"
+                      id="userName"
+                      placeholder="Enter Your Name"
+                    />
+                    <p
+                      class="alert alert-danger p-3 text-center"
+                      id="alertName"
+                    >
+                      Special characters and numbers not allowed
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control mb-2"
+                      id="userEmail"
+                      placeholder="Enter Your Email"
+                    />
+                    <p
+                      class="alert alert-danger p-3 text-center"
+                      id="alertEmail"
+                    >
+                      Email not valid *example@exampl.com
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control mb-2"
+                      id="userPhone"
+                      placeholder="Enter Your Number"
+                    />
+                    <p
+                      class="alert alert-danger p-3 text-center"
+                      id="alertPhone"
+                    >
+                      Enter valid Phone Number
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control mb-2"
+                      id="userAge"
+                      placeholder="Enter Your Age"
+                    />
+                    <p class="alert alert-danger p-3 text-center" id="alertAge">
+                      Enter valid age
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control mb-2"
+                      id="userPassword"
+                      placeholder="Enter Your Password"
+                    />
+                    <p
+                      class="alert alert-danger p-3 text-center"
+                      id="alertPass"
+                    >
+                      Enter valid password *Minimum eight characters, at least
+                      one letter and one number:*
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control mb-2"
+                      id="rePassword"
+                      placeholder="Repassword"
+                    />
+                    <p
+                      class="alert alert-danger p-3 text-center"
+                      id="alertRePass"
+                    >
+                      Enter valid repassword
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-1 mx-auto">
+                  <button class="btn btn-outline-danger" disabled id="submitBtn">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Contact SECTION  -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
